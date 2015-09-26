@@ -1,7 +1,8 @@
 import serial
 import time
+import httpRequest
 
-ser = serial.Serial('COM27', 9600)
+ser = serial.Serial('/dev/cu.AdafruitEZ-Link4e39-SPP', 9600)
 
 while True:
     msg = ser.readline()
